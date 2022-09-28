@@ -68,26 +68,28 @@ function DivProject() {
                       // console.log(e.title + " || " + listService.length)
                       return (
                             <SwiperSlide key={index} >
-                                      <div className="post-item position-relative h-100">
-                                          <div className="post-img position-relative overflow-hidden">
-                                            <img src={image1} className="img-fluid" alt="" />
-                                              <span className="post-date">{e.date}</span>
-                                          </div>
-                                          <div className="post-content d-flex flex-column">
-                                              <h3 className="post-title">{e.title}</h3>
-                                              <div className="meta d-flex align-items-center">
-                                                  <div className="d-flex align-items-center">
-                                                      <i className="bi bi-person"></i> <span className="ps-2">Julia Parker</span>
-                                                  </div>
-                                                  <span className="px-3 text-black-50">/</span>
-                                                  <div className="d-flex align-items-center">
-                                                      <i className="bi bi-folder2"></i> <span className="ps-2">Politics</span>
-                                                  </div>
-                                              </div>
-                                              <hr />
-                                              <a href="blog-details.html" className="readmore stretched-link"><span>Read More</span><i className="bi bi-arrow-right"></i></a>
+                              <div class="col">
+                                <div class="post-item position-relative h-100">
+                                  <div class="post-img position-relative overflow-hidden">
+                                    <img src={image1} class="img-fluid" alt="" />
+                                    <span class="post-date">December 12</span>
+                                  </div>
+                                  <div class="post-content d-flex flex-column">
+                                    <h3 class="post-title">Eum ad dolor et. Autem aut fugiat debitis</h3>
+                                    <div class="meta d-flex align-items-center">
+                                        <div class="d-flex align-items-center">
+                                          <i class="bi bi-person"></i> <span class="ps-2">Julia Parker</span>
                                         </div>
+                                        <span class="px-3 text-black-50">/</span>
+                                      <div class="d-flex align-items-center">
+                                        <i class="bi bi-folder2"></i> <span class="ps-2">Politics</span>
                                       </div>
+                                    </div>
+                                    <hr />  
+                                    <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                                  </div>
+                                </div>
+                              </div>
                             </SwiperSlide>
                   
                       )
