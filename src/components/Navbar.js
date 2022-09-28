@@ -8,9 +8,19 @@ function Navbar() {
     const [click, setClick] = useState(false);
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
+    const [navbar,setNavbar] = useState(false); 
+
+    const changeBackground = () => {
+        if(window.scrollY >=80){
+            closeMobileMenu(true)
+        } else {
+            closeMobileMenu(false);
+        }
+    }
+    window.addEventListener('scroll',changeBackground);
   return (
     <div className="App">
-            <nav>
+            <nav id="navbar">
                  <div  onClick={handleClick} className="checkbtn">
                     <i className={click ? 'fas fa-times' : 'fas fa-bars' } />
                  </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "./Divproject.css";
-import "../assets/bootstrap.css"
+import 'bootstrap/dist/css/bootstrap.min.css';
 import 'swiper/css';
 import image1 from "../assets/blog-1.jpg";
 
