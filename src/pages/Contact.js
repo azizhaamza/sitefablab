@@ -4,9 +4,9 @@ import { Helmet } from "react-helmet";
 function Contact() {
     return (
         <div className="contactUs">
-            <div className="title">
-                <h2>Get in Touch</h2>
-            </div>
+            <header className="arr">
+                <h1 className="ar">.</h1>
+            </header>
             <div className="box">
                 <div className="contact form">
                     <h3>Send a Message</h3>

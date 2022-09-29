@@ -101,16 +101,15 @@ label.logo {
     }
 }
 @media (max-width: 858px) {
-
     .checkbtn {
         display: block;
         margin-top: 0;
     }
-    
+
     .App ul {
         position: fixed;
         width: 100%;
-        height:100ch;
+        height: 100ch;
         background: #393e46;
         top: 80px;
         left: -100%;
@@ -126,7 +125,7 @@ label.logo {
         font-size: 20px;
         color: white;
     }
-    ul.active{
+    ul.active {
         left: 0;
     }
 }

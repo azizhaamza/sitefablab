@@ -1,4 +1,3 @@
-
 .contactUs {
     position: relative;
     width: 100%;
@@ -147,7 +146,6 @@
     height: 100%;
 }
 @media (max-width: 991px) {
-    
     .contactUs {
         padding: 20px;
     }
@@ -171,4 +169,10 @@
     .contact {
         padding: 30px;
     }
+}
+.ar {
+    background-image: url("../assets/Ctt.PNG");
+    background-size: cover;
+    font-size: 1px;
+    height: 200px;
 }

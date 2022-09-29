@@ -1,45 +1,36 @@
-/**
-* Template Name: UpConstruction - v1.1.0
-* Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# Set main reusable colors and fonts using CSS variables
-# Learn more about CSS variables at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
---------------------------------------------------------------*/
-/* Fonts */
 :root {
-  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-primary: "Roboto", sans-serif;
-  --font-secondary: "Work Sans", sans-serif;
+    --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+    --font-primary: "Roboto", sans-serif;
+    --font-secondary: "Work Sans", sans-serif;
 }
 
 /* Colors */
 :root {
-  --color-default: #364d59;
-  --color-primary: #feb900;
-  --color-secondary: #52565e;
+    --color-default: #364d59;
+    --color-primary: #feb900;
+    --color-secondary: #52565e;
 }
 
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: var(--font-default);
-  color: var(--color-default);
-  overflow-x: hidden;
+    font-family: var(--font-default);
+    color: var(--color-default);
+    overflow-x: hidden;
 }
 
 a {
-  color: var(--color-primary);
-  text-decoration: none;
+    color: var(--color-primary);
+    text-decoration: none;
 }
 
 a:hover {
-  color: #ffc732;
-  text-decoration: none;
+    color: #ffc732;
+    text-decoration: none;
 }
 
 h1,
@@ -48,133 +39,129 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-primary);
+    font-family: var(--font-primary);
 }
 
 /*--------------------------------------------------------------
 # Sections & Section Header
 --------------------------------------------------------------*/
 section {
-  padding: 80px 0;
-  overflow: hidden;
-  padding-bottom: 100px;
-  
+    padding: 80px 0;
+    overflow: hidden;
+    padding-bottom: 100px;
 }
 
-
-
 .section-header {
-  text-align: center;
-  padding-bottom: 70px;
+    text-align: center;
+    padding-bottom: 70px;
 }
 
 .section-header h2 {
-  font-size: 32px;
-  font-weight: 700;
-  position: relative;
-  color: #2e3135;
+    font-size: 32px;
+    font-weight: 700;
+    position: relative;
+    color: #2e3135;
 }
 
 .section-header h2:before,
 .section-header h2:after {
-  content: "";
-  width: 50px;
-  height: 2px;
-  background: var(--color-primary);
-  display: inline-block;
+    content: "";
+    width: 50px;
+    height: 2px;
+    background: var(--color-primary);
+    display: inline-block;
 }
 
 .section-header h2:before {
-  margin: 0 15px 10px 0;
+    margin: 0 15px 10px 0;
 }
 
 .section-header h2:after {
-  margin: 0 0 10px 15px;
+    margin: 0 0 10px 15px;
 }
 
 .section-header p {
-  margin: 0 auto 0 auto;
+    margin: 0 auto 0 auto;
 }
 
 @media (min-width: 1199px) {
-  .section-header p {
-    max-width: 60%;
-  }
+    .section-header p {
+        max-width: 60%;
+    }
 }
 
 /*--------------------------------------------------------------
 # Recent Blog Posts Section
 --------------------------------------------------------------*/
 .recent-blog-posts .post-item {
-  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.06);
-  transition: 0.3s;
-  margin: 10px;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.06);
+    transition: 0.3s;
+    margin: 10px;
 }
 
 .recent-blog-posts .post-item .post-img img {
-  transition: 0.5s;
+    transition: 0.5s;
 }
 
 .recent-blog-posts .post-item .post-date {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  background-color: var(--color-primary);
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 13px;
-  padding: 6px 12px;
-  font-weight: 500;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color-primary);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 6px 12px;
+    font-weight: 500;
 }
 
 .recent-blog-posts .post-item .post-content {
-  padding: 30px;
+    padding: 30px;
 }
 
 .recent-blog-posts .post-item .post-title {
-  font-size: 24px;
-  color: var(--color-secondary);
-  font-weight: 700;
-  transition: 0.3s;
-  margin-bottom: 15px;
+    font-size: 24px;
+    color: var(--color-secondary);
+    font-weight: 700;
+    transition: 0.3s;
+    margin-bottom: 15px;
 }
 
 .recent-blog-posts .post-item .meta i {
-  font-size: 16px;
-  color: var(--color-primary);
+    font-size: 16px;
+    color: var(--color-primary);
 }
 
 .recent-blog-posts .post-item .meta span {
-  font-size: 15px;
-  color: #838893;
+    font-size: 15px;
+    color: #838893;
 }
 
 .recent-blog-posts .post-item hr {
-  color: #888;
-  margin: 20px 0;
+    color: #888;
+    margin: 20px 0;
 }
 
 .recent-blog-posts .post-item .readmore {
-  display: flex;
-  align-items: center;
-  font-weight: 600;
-  line-height: 1;
-  transition: 0.3s;
-  color: #838893;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    line-height: 1;
+    transition: 0.3s;
+    color: #838893;
 }
 
 .recent-blog-posts .post-item .readmore i {
-  line-height: 0;
-  margin-left: 6px;
-  font-size: 16px;
+    line-height: 0;
+    margin-left: 6px;
+    font-size: 16px;
 }
 
 .recent-blog-posts .post-item:hover .post-title,
 .recent-blog-posts .post-item:hover .readmore {
-  color: var(--color-primary);
+    color: var(--color-primary);
 }
 
 .recent-blog-posts .post-item:hover .post-img img {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
-
