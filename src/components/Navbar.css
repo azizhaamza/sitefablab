@@ -58,7 +58,7 @@ label.logo {
     left: 51%;
     right: 51%;
     bottom: 0;
-    background: #00adb5;
+    background: orange;
     height: 4px;
     -webkit-transition-property: left, right;
     transition-property: left, right;
@@ -109,9 +109,9 @@ label.logo {
     .App ul {
         position: fixed;
         width: 100%;
-        height: 100ch;
+        height: 200ch;
         background: #393e46;
-        top: 80px;
+        top: 66px;
         left: -100%;
         text-align: center;
         transition: all 0.5s;

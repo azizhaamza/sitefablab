@@ -4,16 +4,23 @@ import { Helmet } from "react-helmet";
 function Contact() {
     return (
         <div className="contactUs">
-            <header className="arr">
-                <h1 className="ar">.</h1>
-            </header>
+            <div class="breadcrumbs d-flex align-items-center">
+                <div class="container position-relative d-flex flex-column align-items-center">
+                    <h2>Contact</h2>
+                    <ol>
+                    <li><a href="index.html">Home</a></li>
+                    <li>Contact</li>
+                    </ol>
+
+                </div>
+            </div>
             <div className="box">
                 <div className="contact form">
                     <h3>Send a Message</h3>
                     <form>
                         <div className="formBox">
                             <div className="row50">
-                                <div className="inputBox">
+                                <div className="inputBox ">
                                     <span>First Name</span>
                                     <input
                                         type="text"
@@ -71,32 +78,15 @@ function Contact() {
                             <span>
                                 <ion-icon name="mail-outline"></ion-icon>
                             </span>
-                            <a href="mailto:fablab@pi.tn">fablab@pi.tn</a>
+                            <p>fablab@pi.tn</p>
                         </div>
                         <div>
                             <span>
                                 <ion-icon name="call-outline"></ion-icon>
                             </span>
-                            <a href="tel:+21650721216">+216 52 057 059</a>
+                            <p>+216 52 057 059</p>
                         </div>
                     </div>
-                    <ul className="sci">
-                        <li>
-                            <a href="https://www.facebook.com/profile.php?id=100083065876343">
-                                <ion-icon name="logo-facebook"></ion-icon>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/polytech_intl.fablab/?hl=fr">
-                                <ion-icon name="logo-instagram"></ion-icon>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com">
-                                <ion-icon name="logo-linkedin"></ion-icon>
-                            </a>
-                        </li>
-                    </ul>
                 </div>
                 <div className="contact map">
                     <iframe

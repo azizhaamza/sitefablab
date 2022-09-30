@@ -1,7 +1,9 @@
 .contactUs {
     position: relative;
     width: 100%;
-    padding: 100px 100px;
+   padding: 0.1px;
+   padding-bottom: 10px;
+
 }
 .contactUs .title {
     display: flex;
@@ -24,9 +26,10 @@
 }
 .contact {
     padding: 40px;
-    background: #393e46;
+    background: white;
     box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
     margin-top: 20px;
+    
 }
 .box {
     position: relative;
@@ -35,12 +38,14 @@
     grid-template-rows: 5fr 4fr;
     grid-template-areas: "form info" "form map";
     grid-gap: 20px;
+    width: 100%;
+    padding: 30px;
 }
 .form h3 {
-    color: #00adb5;
-    font-weight: 500;
-    font-size: 1.4em;
-    margin-bottom: 10px;
+    font-size: 20px;
+    color: #6c757d;
+    font-weight: 700;
+    margin: 10px 0;
 }
 .formBox {
     position: relative;
@@ -69,19 +74,19 @@
     padding: 10px;
     font-size: 1.1em;
     outline: none;
-    border: 3px solid #00adb5;
+    border: 2px medium black;
 }
 .inputBox textarea {
     padding: 10px;
     font-size: 1.1em;
     outline: none;
-    border: 3px solid #00adb5;
+    border: 2px medium black;
     resize: none;
     min-height: 220px;
     margin-bottom: 10px;
 }
 .inputBox input[type="submit"] {
-    background: #00adb5;
+    background: orange;
     color: white;
     border: none;
     font-size: 1.1em;
@@ -92,21 +97,28 @@
 }
 .info {
     background: #222831;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
+    padding: 30px;
 }
 .info h3 {
-    padding: 20px;
-    color: white;
+    font-size: 20px;
+  color: #6c757d;
+  font-weight: 700;
+  margin: 10px 0;
 }
 .info .infoBox div {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    
 }
 .info .infoBox div span {
     min-width: 40px;
     height: 40px;
     color: white;
-    background: #00adb5;
+    background:orange;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -115,31 +127,21 @@
     margin-right: 15px;
 }
 .info .infoBox div p {
-    color: white;
-    font-size: 1.1em;
+    padding: 0;
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
 }
 .info .infoBox div a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.1em;
+    padding: 0;
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
 }
-.sci {
-    margin-top: 40px;
-    display: flex;
-}
-.sci li {
-    list-style: none;
-    margin-right: 15px;
-}
-.sci li a {
-    color: white;
-    font-size: 2em;
-}
-.sci li a:hover {
-    color: rgba(0, 0, 0, 0.7);
-}
+
 .map {
     padding: 0;
+    border: 0;
 }
 .map iframe {
     width: 100%;
@@ -147,16 +149,17 @@
 }
 @media (max-width: 991px) {
     .contactUs {
-        padding: 20px;
+        width: 100%;
     }
     .box {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        grid-template-areas: "form" "info" "map";
+        grid-template-areas: "info" "map" "form";
     }
     .map {
         min-height: 300px;
         padding: 0;
+
     }
     .formBox .row50 {
         display: flex;
@@ -169,10 +172,83 @@
     .contact {
         padding: 30px;
     }
+    .breadcrumbs {
+        height: 100px;
+        
+      }
+    .contactUs .breadcrumbs h2 {
+        font-size: 25px;
+        font-weight: 100;
+        color: #fff;
+        font-family: var(--font-secondary);
+      }
+    .contactUs .breadcrumbs ol {
+        font-size: 15px;
+        font-weight: 500;
+        color: var(--color-primary);}
 }
 .ar {
-    background-image: url("../assets/Ctt.PNG");
-    background-size: cover;
     font-size: 1px;
-    height: 200px;
+    height: 10px;
 }
+
+/*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+.breadcrumbs {
+    margin-top: 80px;
+    padding: 60px 0 140px 0;
+    width: 100%;
+    min-height: 30vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../assets/secondbg.jpg");
+  }
+  
+  .breadcrumbs:before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    inset: 0;
+  }
+  
+  .breadcrumbs h2 {
+    font-size: 56px;
+    font-weight: 500;
+    color: #fff;
+    font-family: var(--font-secondary);
+  }
+  
+  .breadcrumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0 0 10px 0;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-primary);
+  }
+  
+  .breadcrumbs ol a {
+    color: rgba(255, 255, 255, 0.8);
+    transition: 0.3s;
+  }
+  
+  .breadcrumbs ol a:hover {
+    text-decoration: underline;
+  }
+  
+  .breadcrumbs ol li+li {
+    padding-left: 10px;
+  }
+  
+  .breadcrumbs ol li+li::before {
+    display: inline-block;
+    padding-right: 10px;
+    color: #fff;
+    content: "/";
+  }
+  
