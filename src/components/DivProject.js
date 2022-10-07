@@ -1,5 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Link } from "react-router-dom";
 import "./Divproject.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "swiper/css";
@@ -13,6 +14,7 @@ function DivProject() {
             description: "description 1",
             more: "Learn more 1",
             date: "12 Decembre",
+            lien :"/projet/graveur"
         },
         {
             title: "title 2",
@@ -102,13 +104,13 @@ function DivProject() {
                                                 </div>
                                             </div>
                                             <hr />
-                                            <a
-                                                href="blog-details.html"
+                                            <Link
+                                                to={e.lien}
                                                 class="readmore stretched-link"
                                             >
                                                 <span>Read More</span>
                                                 <i class="bi bi-arrow-right"></i>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>

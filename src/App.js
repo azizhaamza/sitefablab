@@ -7,6 +7,7 @@ import Contact from "./pages/Contact";
 import Project from "./pages/Project";
 import Services from "./pages/Services";
 import Footer from "./components/Footer";
+import Descriptionprojet from "./pages/Descriptionprojet";
 
 function App() {
     return (
@@ -17,6 +18,8 @@ function App() {
                 <Route exact path="/project" element={<Project />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/services" element={<Services />} />
+                <Route path="/projet/graveur" element={<Descriptionprojet />} />
+
             </Routes>
             <Footer />
         </Router>

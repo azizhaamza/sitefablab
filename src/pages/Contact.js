@@ -1,19 +1,11 @@
 import "./Contact.css";
 import { Helmet } from "react-helmet";
+import Bordure from "../components/Bordure";
 
 function Contact() {
     return (
         <div className="contactUs">
-            <div class="breadcrumbs d-flex align-items-center">
-                <div class="container position-relative d-flex flex-column align-items-center">
-                    <h2>Contact</h2>
-                    <ol>
-                    <li><a href="index.html">Home</a></li>
-                    <li>Contact</li>
-                    </ol>
-
-                </div>
-            </div>
+           <Bordure />
             <div className="box">
                 <div className="contact form">
                     <h3>Send a Message</h3>
