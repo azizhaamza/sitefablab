@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import logocropped from "../assets/logocropped.png";
+import logocropped from "../assets/logo.png";
 
 function Navbar() {
     const [click, setClick] = useState(false);
@@ -29,12 +29,6 @@ function Navbar() {
                     height="50px"
                     alt="logo"
                 />
-                <label className="logo">
-                    <span>
-                        <b>FabLab </b>
-                    </span>
-                    Polytech Intl
-                </label>
                 <ul className={click ? "active" : ""}>
                     <li>
                         <Link
