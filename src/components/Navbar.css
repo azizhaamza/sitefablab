@@ -26,10 +26,9 @@ label.logo {
     position: inherit;
 }
 .pic {
-    width: 60px;
-    height: 60px;
-    margin-left: 20px;
-    margin-top: 7px;
+    width: 200px;
+    height: 75px;
+    padding: 0;
 }
 .App nav ul {
     float: right;

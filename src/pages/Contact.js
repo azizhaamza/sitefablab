@@ -1,11 +1,11 @@
 import "./Contact.css";
 import { Helmet } from "react-helmet";
-import Bordure from "../components/Bordure";
+import Bordure from "../components/Bordure-contact";
 
 function Contact() {
     return (
         <div className="contactUs">
-           <Bordure />
+            <Bordure />
             <div className="box">
                 <div className="contact form">
                     <h3>Send a Message</h3>

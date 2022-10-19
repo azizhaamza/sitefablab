@@ -2,7 +2,6 @@ import React from "react";
 import Bordure from "../components/Bordure";
 import "./Services.css";
 import'bootstrap/dist/css/bootstrap.min.css';
-import image1 from "../assets/blog-1.jpg";
 
 
 
@@ -151,8 +150,8 @@ function Services() {
 
                 </div>
             </section>
-        </div>
+            </div>
     );
 }
 
-export default Services;
+        export default Services;
